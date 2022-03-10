@@ -1,0 +1,49 @@
+<h1 id="titulo01">Relatório</h1>
+<button id="buttonPDF" style="margin-top: 15px;" (click)="pdfGenerator()" >Gerar relatório</ button>
+
+  <div id="flex-container" class="content"  #content>
+  
+    <table>  
+        <tr>
+          <td>ID</td>
+          <td>Validade</td>
+          <td>Tipo</td>
+          <td>Usuário</td>
+        </tr>
+     
+
+      <tr *ngFor="let m of mangueiras" >
+        <td id="id01"> {{m.id }}</td>
+        <td>{{m.dataDeValidade}}</td>
+        <td>{{m.tipoMang}}</td>
+        <td>{{m.usuario.nome}}</td>
+        
+      </tr>
+    </table>
+  
+    <table>
+
+    
+        <tr>
+          <td>ID</td>
+          <td>Validade</td>
+          <td>Tipo</td>
+          <td>Usuário</td>
+        </tr>
+     
+
+      <tr *ngFor="let v of valvulas" >
+        <td id="id01">{{ v.id }}</td>
+        <td>{{ v.dataDeValidade }}</td>
+        <td>{{ v.tipoVal }}</td>
+        <td>{{ v.usuario.nome }}</td>
+      </tr>
+    </table>
+          
+
+
+
+          
+
+          
+</div>

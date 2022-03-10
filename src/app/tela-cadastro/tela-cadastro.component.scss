@@ -1,0 +1,145 @@
+.flex-container {
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  display: block;
+ margin-top: 10em;
+  width: 100%;
+  height: 99%;
+  background-color: rgb(255, 255, 255);
+}
+ 
+.inputs:focus{
+
+  transition: 300ms;
+  outline: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: rgba($color: red, $alpha: 0.05);
+  transform: scale(1.05);
+
+}
+.inputs{
+    
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; 
+    transition: 500ms;
+
+  }
+ 
+
+  input{
+    padding: 5px;
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  #submit01{
+
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: 0;
+    border: 2px gray;
+    border-radius: 10px;
+    background-color: transparent;
+    border-style: solid;
+    font-size:22px;
+    width: 10em;
+    height: 30px;
+    transition: 500ms;
+    margin-left: 18px;
+  
+}
+
+#submit01:hover{
+
+color: white;
+background-color: red;
+transform: scale(1.02);
+box-shadow: 0px 5px 15px red;
+border: red solid ;
+}
+
+.tabsGroup{
+
+  display: flex;
+  width: 100vw;
+  height: 98vh;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -10em;
+
+  
+}
+
+#emailid{
+  width: 23vw;
+  position: absolute;
+  top: 4em;
+}
+#nomeid{
+  position: absolute;
+  left: 21em;
+  top: 4em;
+  margin-left: 2em;
+}
+
+#senhaid{
+  position: absolute;
+  width: 23vw;
+  top: 157px;
+}
+
+#matriculaid{
+  position: absolute;
+  left: 23em;
+  top: 157px;
+  height: 36px;
+}
+
+#nomeDeGuerraid{
+  position: absolute;
+  left: 38em;
+  top: 157px;
+}
+
+#perfildeAcessoid{
+  position: absolute;
+  left: 38em;
+  top: 4em;
+}
+
+#submit01{
+  position: absolute;
+  left: 47em;
+  top: 161px;
+}
+
+.formCad{
+  padding: 1em;
+  width: 100vw;
+  height: 83vh;
+}
+
+.tabsLayer{
+  display: flex;
+  width: 100vw;
+  height: 98vh;
+  color:  red;
+}
+
+h2{
+  position: absolute;
+  left: 35em;
+  top: 1em;
+}
+
+
+
+

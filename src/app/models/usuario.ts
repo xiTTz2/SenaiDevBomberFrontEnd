@@ -1,0 +1,17 @@
+export interface usuario {
+      id?: number,
+      nome: string,
+      senha: string,
+      email: string,
+      documento: string,
+      endereco: string,
+      numero: number,
+      cep: number,
+      bairro: string,
+      complemento: string,
+      cidade: string,
+      telefone1: string,
+      telefone2: string,
+      latitude: number,
+      longitude: number,
+}

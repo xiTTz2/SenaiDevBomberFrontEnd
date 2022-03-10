@@ -1,0 +1,56 @@
+<div class="container">
+  <mat-drawer-container  autosize>
+    <mat-toolbar class="CampoSuperior" autosize>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1/1324.png"
+        style="width: 64px; height: 64px; padding: 10px; filter: invert(80%);"
+      />
+      <span class="Titulo01" class="linker2" routerLink="/home/mapa">Bombeiros Digital</span>
+
+      <button
+        type="button"
+        class="btnLateralMenu"
+        mat-button
+        (click)="drawer.toggle()"
+      >Ferramentas</button>
+    
+    </mat-toolbar>
+  
+
+
+    <!-- ↓  1º Menu lateral ↓ -->
+    <mat-drawer #drawer class="sidenav" mode="side"  autosize>
+      <h2>Menu Principal</h2>
+      <br />
+
+      <p class="linker" routerLink="relatorio">
+        <img class="imgTool" src="/assets/REL.png" />Relatórios
+      </p>
+
+      <br />
+<!--routerLink="cadastro"  -->
+      <p class="linker"  routerLink="cadastro" *ngIf="isVisible">
+        <img class="imgTool"  src="/assets/cadastro.png"/>Tela cadastro
+      </p>
+
+      <br *ngIf="isVisible" />
+      <p class="linker" (click)="logout()">
+        <img class="imgTool" src="/assets/sair.png" />Sair
+      </p>
+    </mat-drawer>
+  
+    <!-- ↓ centro da tela home ↓ -->
+    <div class="flex-container">
+      
+      <router-outlet></router-outlet>
+  
+     
+   
+    </div>
+  </mat-drawer-container>
+  
+  <br/>
+
+</div>
+
+

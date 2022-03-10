@@ -1,0 +1,41 @@
+<!-- ↓Fundo do site↓ -->
+<div class="container">
+  
+  <!-- ↓Caixa de login onde estão os campos↓ -->
+  <div class="campoLogin">
+
+    <!-- ↓Titulo do campo de login↓ -->
+    <div class="topoLogin">
+      <label class="labelLogin01">Tela Login</label>
+    </div>
+
+    <!-- ↓Campos de login↓ -->
+    <form>
+
+        <label for="campName" class="labelsLogin">Matricula:</label>
+        <input [(ngModel)]="matricula" type="text" placeholder="00000" 
+          class="campName entrada"
+          name="username"
+        />
+    
+      
+        <label for="campPassword" class="labelsLogin">Senha:</label>
+        <input
+        [(ngModel)]="senha"
+          type="password"
+          placeholder="******"
+          class="campPassword entrada"
+          name="password"
+        />
+    
+      <button class="btnEntrar buttonsLogin" data-dismiss="alert" (click)="entrar()" >Entrar</button>
+    </form>
+  </div>
+
+
+
+ 
+</div>
+
+
+<router-outlet></router-outlet>

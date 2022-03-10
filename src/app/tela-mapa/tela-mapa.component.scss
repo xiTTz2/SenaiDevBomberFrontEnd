@@ -1,0 +1,23 @@
+.mapa01{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+}
+
+.mapaEntrada{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.popup{ 
+  border: solid 1px gray;
+  background-color: white;
+  
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: black 2px 2px 5px;
+
+}
